@@ -1,6 +1,5 @@
 #ifndef __soccer_H_
 #define __soccer_H_
-#define 
 /* Auteur : Kevin Jean-Paul Philippe Jallet */
 /* Date : 22/04/26 */
 /* Résumé : une structure qui definie un joueur avec sont 
@@ -30,6 +29,30 @@ struct equipe{
     int nb_joueurs;
     joueur* ls_joueur;
 };
-typedef struct equipe equipe
+typedef struct equipe equipe;
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 22/04/26 */
+/* Résumé : une procédure qui créer un joueur */
+/* Entrée : J un pointeur de joueur */
+void creationJoueur(joueur* j);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 23/04/26 */
+/* Résumé : une procédure qui affiche un joueur */
+/* Entrée : J un joueur */
+void afficherJoueur(joueur j);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 23/04/26 */
+/* Résumé : une procédure qui créer une équipe de joueur */
+/* Entrée : e un pointeur d'equipe et nbjoueur un entier */
+void creationEquipe(equipe* e, int nbjoueur);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 23/04/26 */
+/* Résumé : une procédure qui ajoute un joueur dans une équipe */
+/* Entrée : e un pointeur d'equipe et j un joueur */
+void ajouterJoueur(equipe* e, joueur j);
 
 #endif
