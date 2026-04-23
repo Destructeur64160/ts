@@ -5,9 +5,18 @@
 int main(){
     char maChaine1[10];
     char maChaine2[10];
+    joueur* j;
+    equipe* e;
+    int nbjoueurs;
+    nbjoueurs=1;
+    j=malloc(1*sizeof(joueur));
+    e=malloc(1*sizeof(equipe));
     printf("Entrer une chaîne de caractère : \n");
     scanf("%s",maChaine1);
     printf("l'utilisateur a rentré la chaine suivante : %s \n",maChaine1);
     strcpy(maChaine2, maChaine1);
+    creationJoueur(j);
+    afficherJoueur(*j);
+    creationEquipe(e, nbjoueurs);
     return 0;
 }
